@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /* font-size: 10px; */
+  font-family: sans-serif;
+}
+header {
+  width: 100vw;
+  background-color: rgba(211, 211, 211, 0.358);
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+h2 {
+  color: red;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  background-image: url(wp6579567-aesthetic-desktop-4k-wallpapers.jpg);
+}
+h3 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  padding: 5px 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: none;
+  font-size: 1.5em;
+  background: linear-gradient(to right, gray, #17177c);
+  transition: all 2s ease-out;
+}
+/* .button-trans {
+  background-image: linear-gradient(to left, gray, blue);
+} */
+
+button:hover {
+  width: 220px;
+  height: 70px;
+  /* transform: scale(1.5); */
+  font-size: 2em;
+  background: linear-gradient(to left, gray, #17177c);
+  /* z-index: -1; */
+}
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+  section {
+    height: 100vh;
+  }
+  h2 {
+    display: none;
+  }
+}
